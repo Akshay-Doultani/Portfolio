@@ -39,7 +39,7 @@ const CoverImage = () => {
         {/* Email */}
         <div className="flex items-center mb-2 text-white">
           <FaEnvelope className="mr-2 text-[#a7fce7]" />
-          <span className="text-sm md:text-base">your-email@example.com</span>
+          <span className="text-sm md:text-base">akshaydoultani100@gmail.com</span>.com</span>
         </div>
 
         {/* Location */}
