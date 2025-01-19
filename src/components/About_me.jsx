@@ -34,7 +34,7 @@ const AboutMe = () => {
           </p>
           <a
               href="/akshay resume.pdf"
-              download="My_Resume.pdf"
+              download
               className="bg-[#a7fce7] text-black px-4 py-2 rounded shadow-lg hover:bg-[#8fe8d1] transition duration-300 text-center"
               >
               Download Resume
