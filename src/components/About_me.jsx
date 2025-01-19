@@ -33,12 +33,12 @@ const AboutMe = () => {
             I am passionate about creating efficient, user-friendly web applications and continuously improving my skills in software development. I am eager to apply my knowledge to real-world challenges and contribute to innovative projects.
           </p>
           <a
-            href="/resume.pdf"
-            download
-            className="bg-[#a7fce7] text-black px-4 py-2 rounded shadow-lg hover:bg-[#8fe8d1] transition duration-300 text-center"
-          >
-            Download Resume
-          </a>
+              href="/resume.pdf"
+              download="My_Resume.pdf"
+              className="bg-[#a7fce7] text-black px-4 py-2 rounded shadow-lg hover:bg-[#8fe8d1] transition duration-300 text-center"
+              >
+              Download Resume
+            </a>
 
         </div>
       </div>
