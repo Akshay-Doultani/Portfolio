@@ -56,7 +56,7 @@ const CoverImage = () => {
 
         {/* Download Resume Button */}
         <a
-          href="/akshay resume.pdf"
+          href="/akshayresume.pdf"
           download
           className="bg-[#a7fce7] text-black px-4 py-2 rounded hover:bg-[#8fe8d1] transition duration-300">
           Download Resume
