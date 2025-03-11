@@ -33,13 +33,13 @@ const AboutMe = () => {
             I am passionate about creating efficient, user-friendly web applications and continuously improving my skills in software development. I am eager to apply my knowledge to real-world challenges and contribute to innovative projects.
           </p>
           <a
-              href="/akshayresume.pdf"
-              download
-              className="bg-[#a7fce7] text-black px-4 py-2 rounded shadow-lg hover:bg-[#8fe8d1] transition duration-300 text-center"
-              >
-              Download Resume
-            </a>
-
+            href="https://github.com/Akshay-Doultani"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="bg-[#a7fce7] text-black px-4 py-2 rounded shadow-lg hover:bg-[#8fe8d1] transition duration-300 text-center"
+          >
+            Visit My GitHub
+          </a>
         </div>
       </div>
     </div>
