@@ -51,8 +51,13 @@ const CoverImage = () => {
         {/* Work */}
         <div className="flex items-center text-white mb-4">
           <FaBriefcase className="mr-2 text-[#a7fce7]" />
-          <span className="text-sm md:text-base">Student</span>
+          <span className="text-sm md:text-base">Full Stack Developer | MERN Stack Enthusiast</span>
         </div>
+
+        {/* Experience Summary */}
+        <p className="text-white text-sm md:text-base text-center mb-4 px-4">
+          Passionate full-stack developer with 2+ years of experience building web applications using the MERN stack. Skilled in working with third-party libraries like Firebase, Google Console, Redux, and more.
+        </p>
 
         {/* Download Resume Button */}
         <a
@@ -73,10 +78,21 @@ const CoverImage = () => {
         </div>
 
         {/* Right Side Content */}
-        <div className="w-full md:w-56 h-auto md:h-80 flex flex-col p-4 text-white items-center text-center" style={{ borderRadius: '80px', backgroundColor: '#202423' }}>
-          <h1 className="text-lg md:text-xl mt-5 mb-8"><span className="text-2xl md:text-3xl">3</span> Programming Languages</h1>
-          <h1 className="text-lg md:text-xl mb-8"><span className="text-2xl md:text-3xl">5</span> Development Tools</h1>
-          <h1 className="text-lg md:text-xl"><span className="text-2xl md:text-3xl">2</span> Major Projects</h1>
+        <div
+          className="w-full md:w-64 h-auto md:h-80 flex flex-col p-6 text-white items-center text-center"
+          style={{ borderRadius: '80px', backgroundColor: '#202423', boxShadow: '0px 4px 15px 2px #a7fce7' }}>
+          <h1 className="text-lg md:text-xl mt-5 mb-6">
+            <span className="text-2xl md:text-3xl">3+</span> Programming Languages
+          </h1>
+          <h1 className="text-lg md:text-xl mb-6">
+            <span className="text-2xl md:text-3xl">6+</span> Development Tools & Libraries
+          </h1>
+          <h1 className="text-lg md:text-xl mb-6">
+            <span className="text-2xl md:text-3xl">4+</span> Full-Stack Projects
+          </h1>
+          <h1 className="text-lg md:text-xl">
+            Hands-on Experience in <b>MERN Stack</b>
+          </h1>
         </div>
       </div>
 
