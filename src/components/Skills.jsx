@@ -64,9 +64,7 @@ const Skills = () => {
 
       {/* Attribution to Flaticon */}
       <div className="text-center mt-12">
-        <a href="https://www.flaticon.com/free-icons/coding" title="coding icons" className="text-gray-400 text-sm underline">
-          Coding icons created by Freepik - Flaticon
-        </a>
+       
       </div>
     </div>
   );
