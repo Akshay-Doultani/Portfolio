@@ -36,17 +36,19 @@ const CoverImage = () => {
         {/* Title */}
         <h3 className="text-md md:text-lg text-gray-300 mb-4 text-center">Full Stack Developer</h3>
 
+         {/* Location */}
+        <div className="flex items-center mb-2 text-white">
+          <FaMapMarkerAlt className="mr-2 text-[#a7fce7]" />
+          <span className="text-sm md:text-base">Jaipur</span>
+        </div>
+
         {/* Email */}
         <div className="flex items-center mb-2 text-white">
           <FaEnvelope className="mr-2 text-[#a7fce7]" />
           <span className="text-sm md:text-base">akshaydoultani100@gmail.com</span>
         </div>
 
-        {/* Location */}
-        <div className="flex items-center mb-2 text-white">
-          <FaMapMarkerAlt className="mr-2 text-[#a7fce7]" />
-          <span className="text-sm md:text-base">Jaipur</span>
-        </div>
+       
 
         {/* Work */}
         <div className="flex items-center text-white mb-4">
