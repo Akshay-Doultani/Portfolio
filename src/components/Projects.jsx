@@ -3,7 +3,7 @@ import React from 'react';
 const Projects = () => {
   return (
     <div 
-      className="relative min-h-screen flex flex-col items-center justify-center space-y-16 px-4 md:px-12 bg-[#1E1E2E]"
+      className="relative min-h-screen flex flex-col items-center justify-center space-y-16 px-4 md:px-12 bg-[#1E1E2E] overflow-hidden"
       style={{ fontFamily: "'Poppins', sans-serif" }}
     >
       {/* Background Bubbles */}
@@ -11,8 +11,9 @@ const Projects = () => {
         {/* Large Faded Circles */}
         <div className="bg-blue-200 opacity-40 w-40 h-40 md:w-60 md:h-60 rounded-full absolute top-10 left-10 md:left-20 animate-pulse"></div>
         <div className="bg-purple-200 opacity-30 w-60 h-60 md:w-80 md:h-80 rounded-full absolute bottom-10 right-16 md:right-32 animate-pulse"></div>
+        
         {/* Small Floating Bubbles */}
-        {Array.from({ length: 10 }).map((_, i) => (
+        {Array.from({ length: 15 }).map((_, i) => (
           <div
             key={i}
             className="absolute w-4 h-4 bg-white opacity-30 rounded-full animate-bounce"
@@ -30,7 +31,7 @@ const Projects = () => {
         My Work
       </h1>
 
-      {/* Social Media Project */}
+      {/* Projects */}
       <ProjectCard 
         title="Social Media Application"
         description="A thread-like social media platform where users can create accounts, log in, and share images with others."
@@ -43,7 +44,6 @@ const Projects = () => {
         link="https://social-media-platform-91xmsnapgram.vercel.app/"
       />
 
-      {/* Airbnb-like Property Rental Project */}
       <ProjectCard 
         title="Airbnb-like Property Rental Platform"
         description="A rental platform allowing users to browse, list, and book properties with secure authentication."
@@ -56,7 +56,6 @@ const Projects = () => {
         link="https://place-to-stay1.netlify.app/"
       />
 
-      {/* Blog Upload & Task Management Project */}
       <ProjectCard 
         title="Blog Upload & Task Management Platform"
         description="A full-stack blog application where users can post blogs, like/save posts, and manage tasks using a drag-and-drop system."
@@ -67,9 +66,9 @@ const Projects = () => {
           "Task Management: Drag tasks between Pending and Completed"
         ]}
         link="https://github.com/Akshay-Doultani"
+        isGithub
       />
 
-      {/* Inventory Management System */}
       <ProjectCard 
         title="Inventory Management System"
         description="A system to track inventory, manage stock levels, and automate order processing efficiently."
@@ -89,7 +88,7 @@ const Projects = () => {
 // Reusable Project Card Component
 const ProjectCard = ({ title, description, features, link, isGithub = false }) => {
   return (
-    <div className="w-full max-w-4xl flex flex-col lg:flex-row items-center justify-between px-4 sm:px-8 space-y-8 lg:space-y-0">
+    <div className="w-full max-w-4xl flex flex-col lg:flex-row items-center justify-between px-4 sm:px-8 space-y-8 lg:space-y-0 relative">
       {/* Left Side (Description) */}
       <div className="w-full lg:w-1/2 lg:pr-4 text-center lg:text-left">
         <h1 className="text-3xl text-white font-semibold mb-4">{title}</h1>
@@ -123,4 +122,3 @@ const ProjectCard = ({ title, description, features, link, isGithub = false }) =
 };
 
 export default Projects;
-
