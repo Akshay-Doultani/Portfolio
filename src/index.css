@@ -1,24 +1,28 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-/* Moving bubbles floating animation */
-/* Moving bubbles floating animation */
-@keyframes bubble {
-  0% { transform: translateY(100vh); opacity: 0; }
-  50% { opacity: 0.4; }
-  100% { transform: translateY(-10vh); opacity: 0; }
+/* Random moving bubbles */
+@keyframes bubbleMove {
+  0% { transform: translate(0, 0); opacity: 0.4; }
+  25% { transform: translate(10vw, -5vh); }
+  50% { transform: translate(-5vw, -10vh); opacity: 0.8; }
+  75% { transform: translate(5vw, -15vh); }
+  100% { transform: translate(0, -20vh); opacity: 0.2; }
 }
 
-.animate-bubble {
-  animation: bubble linear infinite;
+.bubble {
   position: absolute;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.2);
+  animation: bubbleMove infinite ease-in-out;
 }
 
-@keyframes moveUpDown {
+/* Slower moving circle along the vertical line */
+@keyframes moveSlow {
   0%, 100% { transform: translateY(0); }
-  50% { transform: translateY(380px); }
+  50% { transform: translateY(300px); }
 }
 
-.animate-moveUpDown {
-  animation: moveUpDown 4s ease-in-out infinite;
+.animate-moveSlow {
+  animation: moveSlow 6s ease-in-out infinite;
 }
