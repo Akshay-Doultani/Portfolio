@@ -2,6 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 /* Randomly moving bubbles covering the whole page */
+/* Bubble Animation */
 @keyframes bubbleMove {
   0% { transform: translate(0, 0); opacity: 0.4; }
   25% { transform: translate(10vw, -5vh); }
@@ -17,11 +18,12 @@
   animation: bubbleMove infinite ease-in-out;
 }
 
+/* Slower Moving Circle */
 @keyframes moveSlow {
   0%, 100% { transform: translateY(0); }
   50% { transform: translateY(300px); }
 }
 
 .animate-moveSlow {
-  animation: moveSlow 12s ease-in-out infinite; /* Slower speed */
+  animation: moveSlow 12s ease-in-out infinite; /* Adjust speed here */
 }
