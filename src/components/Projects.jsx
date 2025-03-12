@@ -3,7 +3,6 @@ import React from "react";
 const Projects = () => {
   return (
     <div className="relative min-h-screen bg-[#1E1E2E] flex flex-col items-center justify-center space-y-16 pb-20 overflow-hidden">
-      
       {/* Bubble Background Effect */}
       {[...Array(20)].map((_, i) => (
         <div
@@ -12,10 +11,10 @@ const Projects = () => {
           style={{
             width: `${Math.random() * 20 + 10}px`,
             height: `${Math.random() * 20 + 10}px`,
-            left: `${Math.random() * 100}%`,
-            top: `${Math.random() * 100}vh`,
-            animationDuration: `${8 + Math.random() * 4}s`,
-            animationDelay: `${Math.random() * 3}s`,
+            left: `${Math.random() * 120 - 10}vw`, // Extended horizontal range
+            top: `${Math.random() * 120 - 10}vh`,  // Extended vertical range
+            animationDuration: `${8 + Math.random() * 4}s`, // Random duration
+            animationDelay: `${Math.random() * 3}s`,       // Random delay
           }}
         ></div>
       ))}
@@ -38,7 +37,6 @@ const Projects = () => {
           ],
           link: "https://social-media-platform-91xmsnapgram.vercel.app/",
         },
-        
         {
           title: "Airbnb-like Property Rental Platform",
           description:
@@ -51,8 +49,7 @@ const Projects = () => {
           ],
           link: "https://place-to-stay1.netlify.app/",
         },
-
-      {
+        {
           title: "Blog Upload Platform",
           description:
             "Users can upload blog posts with images, like and save posts, and manage their own posts. Features a built-in task management system.",
@@ -64,7 +61,6 @@ const Projects = () => {
           ],
           link: "https://github.com/Akshay-Doultani",
         },
-      
         {
           title: "Inventory Management System",
           description:
@@ -76,7 +72,7 @@ const Projects = () => {
             "Dynamic reporting and analytics",
           ],
           link: "https://github.com/Akshay-Doultani",
-          isGitHub: true, // Only this one links to GitHub
+          isGitHub: true,
         },
       ].map((project, index) => (
         <div key={index} className="relative w-full max-w-4xl mx-auto flex flex-col lg:flex-row items-center justify-between px-4 sm:px-8 space-y-8 lg:space-y-0">
