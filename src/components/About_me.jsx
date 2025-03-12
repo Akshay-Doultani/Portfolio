@@ -3,17 +3,21 @@ import React from 'react';
 const AboutMe = () => {
   return (
     <div 
-      className="relative flex flex-col md:flex-row min-h-[115vh] px-4 md:px-12 bg-blue-100" 
-      style={{ fontFamily: "'Poppins', sans-serif" }} // Added new font
+      className="relative flex flex-col md:flex-row min-h-[115vh] px-4 md:px-12" 
+      style={{ 
+        fontFamily: "'Poppins', sans-serif", 
+        background: "linear-gradient(to bottom right, #1E1E2E, #2A2A3A)", // Gradient background added
+        color: "#ffffff" // Ensuring text remains readable
+      }}
     >
       {/* Background Elements */}
       <div className="absolute top-0 left-0 w-full h-full overflow-hidden">
         {/* Light Circle Shape */}
-        <div className="bg-blue-200 opacity-40 w-52 h-52 md:w-72 md:h-72 rounded-full absolute top-10 left-10 md:left-20"></div>
+        <div className="bg-blue-300 opacity-30 w-52 h-52 md:w-72 md:h-72 rounded-full absolute top-10 left-10 md:left-20"></div>
         {/* Larger Soft Shape */}
-        <div className="bg-purple-200 opacity-30 w-72 h-72 md:w-96 md:h-96 rounded-full absolute bottom-10 right-16 md:right-32"></div>
+        <div className="bg-purple-300 opacity-20 w-72 h-72 md:w-96 md:h-96 rounded-full absolute bottom-10 right-16 md:right-32"></div>
         {/* Subtle Overlay */}
-        <div className="absolute inset-0 bg-white opacity-20"></div>
+        <div className="absolute inset-0 bg-black opacity-10"></div>
       </div>
 
       {/* Main Content */}
@@ -21,7 +25,7 @@ const AboutMe = () => {
         {/* Left Side - About Me Heading */}
         <div className="w-full md:w-1/3 flex flex-col items-center md:items-start text-center md:text-left mb-8 md:mb-0">
           <h1 
-            className="text-4xl md:text-6xl font-bold text-gray-800" 
+            className="text-4xl md:text-6xl font-bold text-white" 
             style={{ textShadow: '3px 3px rgba(0, 0, 0, 0.4)' }}
           >
             About Me
@@ -35,14 +39,14 @@ const AboutMe = () => {
 
         {/* Right Side - About Content */}
         <div className="pl-0 md:pl-11 flex flex-col justify-start">
-          <p className="text-sm md:text-lg text-gray-700 mb-3 md:mb-4 max-w-full md:max-w-xl leading-relaxed">
-            I am a passionate **Full-Stack Developer** with expertise in the **MERN stack** (MongoDB, Express.js, React.js, Node.js). Currently pursuing my **Master of Computer Applications (MCA)**, I have been actively honing my skills in **web development, cloud computing, and modern software architecture**.
+          <p className="text-sm md:text-lg text-gray-300 mb-3 md:mb-4 max-w-full md:max-w-xl leading-relaxed">
+            I am a passionate <strong>Full-Stack Developer</strong> with expertise in the <strong>MERN stack</strong> (MongoDB, Express.js, React.js, Node.js). Currently pursuing my <strong>Master of Computer Applications (MCA)</strong>, I have been actively honing my skills in <strong>web development, cloud computing, and modern software architecture</strong>.
             <br /><br />
-            My journey in development began with a strong curiosity for how web applications function behind the scenes. Over the past **two years**, I have **built and deployed multiple full-stack applications**, integrating **third-party libraries** like **Firebase, Google Console, and Redux** to create seamless user experiences.
+            My journey in development began with a strong curiosity for how web applications function behind the scenes. Over the past <strong>two years</strong>, I have <strong>built and deployed multiple full-stack applications</strong>, integrating <strong>third-party libraries</strong> like <strong>Firebase, Google Console, and Redux</strong> to create seamless user experiences.
             <br /><br />
-            I thrive on **problem-solving** and **building scalable, high-performance applications**. Whether it’s optimizing databases, implementing secure authentication, or designing intuitive UIs, I am always eager to push my limits and stay up-to-date with the latest technologies.
+            I thrive on <strong>problem-solving</strong> and <strong>building scalable, high-performance applications</strong>. Whether it’s optimizing databases, implementing secure authentication, or designing intuitive UIs, I am always eager to push my limits and stay up-to-date with the latest technologies.
             <br /><br />
-            Beyond coding, I am deeply interested in **software development life cycle (SDLC), cloud services, and DevOps practices**. My goal is to contribute innovative solutions in a dynamic and challenging environment where I can grow as a developer while **solving real-world problems**.
+            Beyond coding, I am deeply interested in <strong>software development life cycle (SDLC), cloud services, and DevOps practices</strong>. My goal is to contribute innovative solutions in a dynamic and challenging environment where I can grow as a developer while <strong>solving real-world problems</strong>.
           </p>
 
           {/* GitHub Button with extra bottom spacing */}
