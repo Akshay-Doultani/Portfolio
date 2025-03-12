@@ -66,7 +66,7 @@ const Projects = () => {
             "Task management with draggable tasks",
             "Separate columns for 'Completed' and 'Pending' tasks",
           ],
-          link: "https://github.com/Akshay-Doultani",
+          link: "https://affworld-theta.vercel.app/login",
         },
         {
           title: "Inventory Management System",
