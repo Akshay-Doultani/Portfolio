@@ -3,7 +3,7 @@ import React from 'react';
 const Projects = () => {
   return (
     <div 
-      className="relative min-h-screen flex flex-col items-center justify-center space-y-16 px-4 md:px-12 bg-[#1E1E2E] overflow-hidden"
+      className="relative min-h-screen flex flex-col items-center justify-center space-y-16 px-4 md:px-12 bg-[#1E1E2E] overflow-hidden mb-20"
       style={{ fontFamily: "'Poppins', sans-serif" }}
     >
       {/* Background Bubbles */}
@@ -104,7 +104,7 @@ const ProjectCard = ({ title, description, features, link, isGithub = false }) =
 
       {/* Vertical Line with Moving Circle */}
       <div className="hidden lg:block h-[400px] w-1 bg-white relative overflow-hidden">
-        <div className="absolute top-0 left-1/2 transform -translate-x-1/2 w-6 h-6 rounded-full bg-white animate-moveUpDown"></div>
+        <div className="absolute top-0 left-1/2 transform -translate-x-1/2 w-8 h-8 rounded-full bg-white animate-moveUpDown"></div>
       </div>
 
       {/* Right Side (Link) */}
