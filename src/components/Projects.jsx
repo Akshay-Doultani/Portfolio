@@ -5,16 +5,17 @@ const Projects = () => {
     <div className="relative min-h-screen bg-[#1E1E2E] flex flex-col items-center justify-center space-y-16 pb-20 overflow-hidden">
       
       {/* Bubble Background Effect */}
-      {[...Array(15)].map((_, i) => (
+      {[...Array(20)].map((_, i) => (
         <div
           key={i}
           className="bubble"
           style={{
-            width: `${Math.random() * 15 + 5}px`,
-            height: `${Math.random() * 15 + 5}px`,
+            width: `${Math.random() * 20 + 10}px`,
+            height: `${Math.random() * 20 + 10}px`,
             left: `${Math.random() * 100}%`,
-            animationDuration: `${5 + Math.random() * 6}s`,
-            animationDelay: `${Math.random() * 4}s`,
+            top: `${Math.random() * 100}vh`,
+            animationDuration: `${8 + Math.random() * 4}s`,
+            animationDelay: `${Math.random() * 3}s`,
           }}
         ></div>
       ))}
@@ -50,6 +51,7 @@ const Projects = () => {
           ],
           link: "https://place-to-stay1.netlify.app/",
         },
+
       {
           title: "Blog Upload Platform",
           description:
@@ -62,6 +64,7 @@ const Projects = () => {
           ],
           link: "https://github.com/Akshay-Doultani",
         },
+      
         {
           title: "Inventory Management System",
           description:
