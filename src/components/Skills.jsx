@@ -8,7 +8,7 @@ const Skills = () => {
     { imgSrc: '/1012820_code_development_logo_nodejs_icon.png', title: 'Node.js', content: "Backend JavaScript runtime used for building scalable APIs and web servers." },
     { imgSrc: '/icons8-express-js-80.png', title: 'Express.js', content: 'Fast and minimal backend framework for building REST APIs with Node.js.' },
     { imgSrc: '/icons8-mongodb-144.png', title: 'MongoDB', content: 'NoSQL database used for handling large amounts of unstructured data.' },
-    { imgSrc: '/icons8-redux-144.png', title: 'Redux', content: 'State management library to handle complex application states efficiently.' },
+    { imgSrc: '/redux.png', title: 'Redux', content: 'State management library to handle complex application states efficiently.' },
     { imgSrc: '/icons8-java-logo-144.png', title: 'Java', content: 'Object-oriented programming language used for enterprise and backend applications.' },
     { imgSrc: '/cpp.png', title: 'C++', content: 'High-performance language used for system programming and game development.' },
     { imgSrc: '/firebase.png', title: 'Firebase', content: 'Google-backed platform for authentication, databases, and cloud functions.' },
