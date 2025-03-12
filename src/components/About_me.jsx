@@ -3,7 +3,7 @@ import React from 'react';
 const AboutMe = () => {
   return (
     <div 
-      className="relative flex flex-col md:flex-row min-h-[110vh] px-4 md:px-12 bg-blue-100" 
+      className="relative flex flex-col md:flex-row min-h-[115vh] px-4 md:px-12 bg-blue-100" 
       style={{ fontFamily: "'Poppins', sans-serif" }} // Added new font
     >
       {/* Background Elements */}
@@ -45,12 +45,12 @@ const AboutMe = () => {
             Beyond coding, I am deeply interested in **software development life cycle (SDLC), cloud services, and DevOps practices**. My goal is to contribute innovative solutions in a dynamic and challenging environment where I can grow as a developer while **solving real-world problems**.
           </p>
 
-          {/* GitHub Button */}
+          {/* GitHub Button with extra bottom spacing */}
           <a
             href="https://github.com/Akshay-Doultani"
             target="_blank"
             rel="noopener noreferrer"
-            className="bg-[#a7fce7] text-black px-4 py-2 rounded shadow-lg hover:bg-[#8fe8d1] transition duration-300 text-center"
+            className="bg-[#a7fce7] text-black px-4 py-2 rounded shadow-lg hover:bg-[#8fe8d1] transition duration-300 text-center mb-10"
           >
             Visit My GitHub
           </a>
