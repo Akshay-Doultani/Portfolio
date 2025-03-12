@@ -2,7 +2,10 @@ import React from 'react';
 
 const AboutMe = () => {
   return (
-    <div className="relative flex flex-col md:flex-row h-screen px-4 md:px-12 bg-blue-100">
+    <div 
+      className="relative flex flex-col md:flex-row min-h-[110vh] px-4 md:px-12 bg-blue-100" 
+      style={{ fontFamily: "'Poppins', sans-serif" }} // Added new font
+    >
       {/* Background Elements */}
       <div className="absolute top-0 left-0 w-full h-full overflow-hidden">
         {/* Light Circle Shape */}
@@ -17,7 +20,10 @@ const AboutMe = () => {
       <div className="relative flex flex-col md:flex-row w-full items-start z-10 mt-8">
         {/* Left Side - About Me Heading */}
         <div className="w-full md:w-1/3 flex flex-col items-center md:items-start text-center md:text-left mb-8 md:mb-0">
-          <h1 className="text-4xl md:text-6xl font-bold text-gray-800" style={{ textShadow: '3px 3px rgba(0, 0, 0, 0.4)' }}>
+          <h1 
+            className="text-4xl md:text-6xl font-bold text-gray-800" 
+            style={{ textShadow: '3px 3px rgba(0, 0, 0, 0.4)' }}
+          >
             About Me
           </h1>
           <img 
