@@ -112,6 +112,13 @@ const Projects = () => {
           </div>
         </div>
       ))}
+
+      {/* Warning Message */}
+      <div className="fixed bottom-4 w-full text-center">
+        <p className="text-white bg-gray-900 p-2 rounded-md inline-block">
+          Please wait for a minute before using, as the server is on a cold start. 😊
+        </p>
+      </div>
     </div>
   );
 };
