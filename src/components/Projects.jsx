@@ -1,18 +1,25 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 
 const Projects = () => {
+  const [pageHeight, setPageHeight] = useState(0);
+
+  useEffect(() => {
+    // Dynamically calculate the page height
+    setPageHeight(document.body.scrollHeight);
+  }, []);
+
   return (
     <div className="relative min-h-screen bg-[#1E1E2E] flex flex-col items-center justify-center space-y-16 pb-20 overflow-hidden">
       {/* Bubble Background Effect */}
-      {[...Array(20)].map((_, i) => (
+      {[...Array(50)].map((_, i) => (
         <div
           key={i}
           className="bubble"
           style={{
             width: `${Math.random() * 20 + 10}px`,
             height: `${Math.random() * 20 + 10}px`,
-            left: `${Math.random() * 120 - 10}vw`, // Extended horizontal range
-            top: `${Math.random() * 120 - 10}vh`,  // Extended vertical range
+            left: `${Math.random() * 100}vw`, // Random horizontal placement
+            top: `${Math.random() * pageHeight}px`, // Spread across full page height
             animationDuration: `${8 + Math.random() * 4}s`, // Random duration
             animationDelay: `${Math.random() * 3}s`,       // Random delay
           }}
