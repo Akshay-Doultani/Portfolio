@@ -1,19 +1,19 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-/* Random moving bubbles */
+/* Randomly moving bubbles covering the whole page */
 @keyframes bubbleMove {
   0% { transform: translate(0, 0); opacity: 0.4; }
   25% { transform: translate(10vw, -5vh); }
-  50% { transform: translate(-5vw, -10vh); opacity: 0.8; }
-  75% { transform: translate(5vw, -15vh); }
-  100% { transform: translate(0, -20vh); opacity: 0.2; }
+  50% { transform: translate(-10vw, -15vh); opacity: 0.8; }
+  75% { transform: translate(5vw, -25vh); }
+  100% { transform: translate(-5vw, -35vh); opacity: 0.2; }
 }
 
 .bubble {
   position: absolute;
   border-radius: 50%;
-  background-color: rgba(255, 255, 255, 0.2);
+  background-color: rgba(255, 255, 255, 0.15);
   animation: bubbleMove infinite ease-in-out;
 }
 
