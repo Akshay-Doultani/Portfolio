@@ -80,14 +80,12 @@ const CoverImage = () => {
             <span className="text-2xl md:text-3xl">3+</span> Programming Languages
           </h1>
           <h1 className="text-lg md:text-xl mb-4">
-            <span className="text-2xl md:text-3xl">8+</span> Development Tools & Libraries
+            <span className="text-2xl md:text-3xl">6+</span> Development Tools & Libraries
           </h1>
           <h1 className="text-lg md:text-xl mb-4">
-            <span className="text-2xl md:text-3xl">6+</span> Full-Stack Projects
+            <span className="text-2xl md:text-3xl">4+</span> Full-Stack Projects
           </h1>
-          <h1 className="text-lg md:text-xl">
-            Hands-on Experience in <b>MERN Stack</b>
-          </h1>
+         
         </div>
       </div>
 
