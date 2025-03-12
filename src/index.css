@@ -2,6 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 /* Moving bubbles floating animation */
+/* Moving bubbles floating animation */
 @keyframes float {
   0% { transform: translateY(0); opacity: 0.6; }
   50% { transform: translateY(-30px); opacity: 0.8; }
@@ -15,9 +16,10 @@
 /* Small circle traveling on vertical line */
 @keyframes moveUpDown {
   0% { transform: translateY(0); }
-  100% { transform: translateY(350px); }
+  100% { transform: translateY(400px); }
 }
 
 .animate-moveUpDown {
   animation: moveUpDown 3s linear infinite alternate;
+  box-shadow: 0px 0px 10px 3px rgba(255, 255, 255, 0.6); /* Glow Effect */
 }
