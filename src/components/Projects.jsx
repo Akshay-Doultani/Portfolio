@@ -5,16 +5,16 @@ const Projects = () => {
     <div className="relative min-h-screen bg-[#1E1E2E] flex flex-col items-center justify-center space-y-16 pb-20 overflow-hidden">
       
       {/* Bubble Background Effect */}
-      {[...Array(10)].map((_, i) => (
+      {[...Array(15)].map((_, i) => (
         <div
           key={i}
-          className="animate-bubble bg-white opacity-20 rounded-full"
+          className="bubble"
           style={{
-            width: `${Math.random() * 10 + 5}px`,
-            height: `${Math.random() * 10 + 5}px`,
+            width: `${Math.random() * 15 + 5}px`,
+            height: `${Math.random() * 15 + 5}px`,
             left: `${Math.random() * 100}%`,
-            animationDuration: `${3 + Math.random() * 5}s`,
-            animationDelay: `${Math.random() * 3}s`,
+            animationDuration: `${5 + Math.random() * 6}s`,
+            animationDelay: `${Math.random() * 4}s`,
           }}
         ></div>
       ))}
@@ -35,9 +35,22 @@ const Projects = () => {
             "Following/unfollowing functionality",
             "Liking and saving images",
           ],
-          link: "https://github.com/Akshay-Doultani",
+          link: "https://social-media-platform-91xmsnapgram.vercel.app/",
         },
+        
         {
+          title: "Airbnb-like Property Rental Platform",
+          description:
+            "An Airbnb-like property rental system where users can browse, list, and book rental properties.",
+          features: [
+            "Property Listings: Browse detailed rental properties with images and pricing.",
+            "User Authentication: Secure login and registration for owners and renters.",
+            "Direct Booking: Contact property owners directly to book rooms.",
+            "Review System: Leave reviews and ratings for properties.",
+          ],
+          link: "https://place-to-stay1.netlify.app/",
+        },
+      {
           title: "Blog Upload Platform",
           description:
             "Users can upload blog posts with images, like and save posts, and manage their own posts. Features a built-in task management system.",
@@ -60,6 +73,7 @@ const Projects = () => {
             "Dynamic reporting and analytics",
           ],
           link: "https://github.com/Akshay-Doultani",
+          isGitHub: true, // Only this one links to GitHub
         },
       ].map((project, index) => (
         <div key={index} className="relative w-full max-w-4xl mx-auto flex flex-col lg:flex-row items-center justify-between px-4 sm:px-8 space-y-8 lg:space-y-0">
@@ -76,7 +90,7 @@ const Projects = () => {
 
           {/* Vertical Line with Moving Circle */}
           <div className="hidden lg:flex flex-col items-center relative h-96 w-1 bg-white">
-            <div className="absolute w-6 h-6 bg-white rounded-full animate-moveUpDown"></div>
+            <div className="absolute w-6 h-6 bg-white rounded-full animate-moveSlow"></div>
           </div>
 
           {/* Right Side */}
@@ -87,7 +101,7 @@ const Projects = () => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              Check on GitHub
+              {project.isGitHub ? "Check on GitHub" : "View Project"}
             </a>
           </div>
         </div>
