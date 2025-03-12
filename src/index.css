@@ -17,12 +17,11 @@
   animation: bubbleMove infinite ease-in-out;
 }
 
-/* Slower moving circle along the vertical line */
 @keyframes moveSlow {
   0%, 100% { transform: translateY(0); }
   50% { transform: translateY(300px); }
 }
 
 .animate-moveSlow {
-  animation: moveSlow 6s ease-in-out infinite;
+  animation: moveSlow 12s ease-in-out infinite; /* Slower speed */
 }
