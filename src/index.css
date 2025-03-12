@@ -1,3 +1,23 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+/* Moving bubbles floating animation */
+@keyframes float {
+  0% { transform: translateY(0); opacity: 0.6; }
+  50% { transform: translateY(-30px); opacity: 0.8; }
+  100% { transform: translateY(0); opacity: 0.6; }
+}
+
+.animate-float {
+  animation: float 4s infinite ease-in-out;
+}
+
+/* Small circle traveling on vertical line */
+@keyframes moveUpDown {
+  0% { transform: translateY(0); }
+  100% { transform: translateY(350px); }
+}
+
+.animate-moveUpDown {
+  animation: moveUpDown 3s linear infinite alternate;
+}
