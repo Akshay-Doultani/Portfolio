@@ -51,7 +51,7 @@ const CoverImage = () => {
        
 
         {/* Work */}
-        <div className="flex items-center text-white mb-4 ml-4">
+        <div className="flex items-center text-white mb-4 ml-5">
           <FaBriefcase className="mr-2 text-[#a7fce7]" />
           <span className="text-sm md:text-base">Full Stack Developer | MERN Stack Enthusiast</span>
         </div>
