@@ -3,30 +3,9 @@ import React from 'react';
 const Projects = () => {
   return (
     <div 
-      className="relative min-h-screen flex flex-col items-center justify-center space-y-16 px-4 md:px-12 bg-[#1E1E2E] overflow-hidden mb-20"
+      className="relative min-h-screen flex flex-col items-center justify-center space-y-16 px-4 md:px-12 bg-[#1E1E2E] overflow-hidden pb-20"
       style={{ fontFamily: "'Poppins', sans-serif" }}
     >
-      {/* Background Bubbles */}
-      <div className="absolute inset-0 overflow-hidden">
-        {/* Large Faded Circles */}
-        <div className="bg-blue-200 opacity-40 w-40 h-40 md:w-60 md:h-60 rounded-full absolute top-10 left-10 md:left-20 animate-pulse"></div>
-        <div className="bg-purple-200 opacity-30 w-60 h-60 md:w-80 md:h-80 rounded-full absolute bottom-10 right-16 md:right-32 animate-pulse"></div>
-        
-        {/* Small Floating Bubbles */}
-        {Array.from({ length: 15 }).map((_, i) => (
-          <div
-            key={i}
-            className="absolute w-4 h-4 bg-white opacity-30 rounded-full animate-float"
-            style={{
-              top: `${Math.random() * 100}%`,
-              left: `${Math.random() * 100}%`,
-              animationDuration: `${2 + Math.random() * 3}s`,
-              animationDelay: `${Math.random() * 2}s`
-            }}
-          ></div>
-        ))}
-      </div>
-
       {/* Section Heading */}
       <h1 className="text-5xl font-bold text-white text-center mb-4">
         My Work
@@ -81,15 +60,16 @@ const Projects = () => {
         ]}
         link="https://github.com/Akshay-Doultani"
         isGithub
+        extraMargin // Special margin for last project
       />
     </div>
   );
 };
 
 // Reusable Project Card Component
-const ProjectCard = ({ title, description, features, link, isGithub = false }) => {
+const ProjectCard = ({ title, description, features, link, isGithub = false, extraMargin = false }) => {
   return (
-    <div className="w-full max-w-4xl flex flex-col lg:flex-row items-center justify-between px-4 sm:px-8 space-y-8 lg:space-y-0 relative">
+    <div className={`w-full max-w-4xl flex flex-col lg:flex-row items-center justify-between px-4 sm:px-8 space-y-8 lg:space-y-0 ${extraMargin ? 'mb-16' : ''}`}>
       {/* Left Side (Description) */}
       <div className="w-full lg:w-1/2 lg:pr-4 text-center lg:text-left">
         <h1 className="text-3xl text-white font-semibold mb-4">{title}</h1>
