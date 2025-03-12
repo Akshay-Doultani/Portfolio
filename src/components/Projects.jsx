@@ -111,7 +111,7 @@ const Projects = () => {
             </a>
             {/* Warning Message */}
             <p className="mt-4 text-sm text-gray-400">
-              Please wait for a minute before using, as the server is on a cold start. 😊
+              Please wait for a minute after opening, as the server is on a cold start. 😊
             </p>
           </div>
         </div>
